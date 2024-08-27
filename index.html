@@ -16,7 +16,20 @@
         let maria = 2;
         deJoaoParaMaria();
         deMariaParaJoao();
-        
+
+        let oJoao = {
+            tipo: "maçã",
+            qtd: 1
+        }
+
+        let oMaria = {
+            tipo: "maçã",
+            qtd: 1
+        }
+
+        oMaria.qtd = oMaria.qtd + oJoao.qtd;
+        oJoao.qtd = 0;
+
         function deJoaoParaMaria(){
             maria = maria + joao;
             joao = 0;
