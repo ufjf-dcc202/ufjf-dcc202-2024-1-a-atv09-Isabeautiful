@@ -24,8 +24,15 @@
 
         let oMaria = {
             tipo: "maçã",
-            qtd: 1
+            qtd: 1,
+            comeu: function() {
+                oMaria.qtd--;
+            }
         }
+
+        console.log("Maria tinha ", oMaria.qtd, "maçãs");
+        oMaria.comeu();
+        console.log("Maria comeu uma, agora tem ", oMaria.qtd, "maçãs");
 
         oMaria.qtd = oMaria.qtd + oJoao.qtd;
         oJoao.qtd = 0;
